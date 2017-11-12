@@ -9,7 +9,7 @@
     @foreach($todos as $todo)
   <li class="list-group-item">
     <span class="tag tag-default tag-pill float-xs-right">{{$todo->id}}</span>
-    {{$todo->body}}
+    {{ucfirst($todo->body)}}
     <span class="pull-right">{{$todo->created_at->diffForHumans()}}</span>
 
   </li>
